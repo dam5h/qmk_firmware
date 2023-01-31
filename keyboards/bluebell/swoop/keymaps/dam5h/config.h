@@ -22,7 +22,7 @@
 #define MATRIX_COLS 5
 
 // combos definition
-#define COMBO_COUNT 1
+#define COMBO_COUNT 2
 
 // wiring of each half
 #define MATRIX_ROW_PINS { D4, C6, D7, E6 }
