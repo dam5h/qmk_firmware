@@ -23,11 +23,9 @@ enum layers {
 
 
 const uint16_t PROGMEM esc_combo[] = {KC_D, KC_F, COMBO_END};
-const uint16_t PROGMEM bspc_combo[] = {KC_J, KC_K, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(esc_combo, KC_ESC),
-    COMBO(bspc_combo, KC_BSPC),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -50,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,
     KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,                       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,
 
-         LGUI_T(KC_TAB), KC_LSFT, LCTL_T(KC_ENT),         KC_SPC,  MO(_RS),  LALT_T(KC_MINS)
+         LGUI_T(KC_TAB), KC_LSFT, LCTL_T(KC_BSPC),         LT(_RS, KC_SPC),  KC_ENT,  LALT_T(KC_MINS)
   ),
   [_RS] = LAYOUT_split_3x5_3( /* [> RAISE <] */
     KC_EXLM, KC_AT,   KC_UP,   KC_LCBR, KC_RCBR,                   KC_PGUP, KC_7,    KC_8,   KC_9, KC_ASTR ,
