@@ -14,7 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
-#include "config_common.h"
 
 
 // key matrix size (rows are doubled)
@@ -34,7 +33,6 @@
 #define EE_HANDS
 
 #define TAPPING_TERM 195
-#define IGNORE_MOD_TAP_INTERRUPT
 
 /* Top left key on left half */
 #define BOOTMAGIC_LITE_ROW    0

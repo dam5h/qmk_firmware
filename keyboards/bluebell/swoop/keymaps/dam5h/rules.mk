@@ -2,8 +2,8 @@
 MCU = atmega32u4
 
 # Bootloader selection
-BOOTLOADER = rp2040
-CONVERT_TO=elite_pi
+BOOTLOADER = atmel-dfu
+# CONVERT_TO=elite_pi
 
 # Build Options
 #   change yes to no to disable
